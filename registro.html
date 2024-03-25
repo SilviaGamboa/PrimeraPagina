@@ -1,0 +1,106 @@
+<!DOCTYPE html> <!-- indica que se esta trabajando en html5-->
+<html  lang="es"> <!-- -->
+
+<head> <!-- -->
+ <meta charset="UTF-8"> <!--permite que podamos usar todos los caracteres -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--que se adapte bien a cada dispositivo -->
+<title> 
+Veterinaria Turrialba
+</title>
+<link rel="stylesheet" type="text/css" href="PrimeraPaginaWeb/css/estilo.css">
+<script src = "PrimeraPaginaWeb/js/registro.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1> Veterinaria Turrialba</h1> <!-- tutulo-->
+        <nav> <!-- barra de navegacion-->
+
+            <ul>
+                <li> <a href="index.html"> Inicio </a></li>
+                <li> <a href="inicioSesion.html"> Inicio de Sesion </a></li>
+                <li> <a href="animacion.html"> Animacion </a></li>
+
+            </ul>
+        </nav> 
+    </header>
+
+    
+    <main>
+
+        <div class="contenido">
+
+            <div class="formulario">
+
+                <h2> Registro</h2>
+
+                <form id="formulario" method="post">
+
+                    <div class="nombre">
+                        <label> Nombre: </label>
+                        <input id="nombre" type="text" required>
+
+                    
+                        <label> Apellidos: </label>
+                        <input id="apellidos" type="text" required>
+
+                    </div>
+                    <div class="edad">
+                        <label> Edad: </label>
+                        <input id="edad" type="number" required>
+
+                    </div>
+                    <div class="Numtel">
+                        <label> Numero de telefono: </label>
+                        <input id="numero" type="tel" required>
+
+                    </div>
+                    <div class="Genero">
+                        <label> Genero: </label>
+                        <select name="genero" id="genero">
+                            <option value="hombre">Masculino </option>
+                            <option value="mujer">Femenino </option>
+                        
+
+                        </select>
+
+                    </div>
+                    <div class="usuarios">
+                        <label> Correo electrinico: </label>
+                        <input id="correo" type="email" required>
+
+                    </div>
+                    <div class="contrasenna">
+                        <label> Contraseña: </label>
+                        <input id="contrasenna" type="password" required>
+                        
+                    </div>
+
+                    <input id="botonregistrarse" type="submit" value="Registrarse">
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <p> Siguenos en redes sociales</p>
+
+        <div>
+            <a href="">Facebook</a>
+        </div>
+        <p>
+            Derechos de autor
+        </p>
+
+    </footer>
+
+</body>
+
+
+</html>
